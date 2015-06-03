@@ -1,4 +1,4 @@
-FROM codenvy/jdk7
+FROM eivantsov/jdk8
 RUN mkdir /home/user/maven3 && \
     wget -qO- "http://archive.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz" | tar -zx --strip-components=1 -C /home/user/maven3
 ENV M2_HOME /home/user/maven3   
